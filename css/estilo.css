@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    background-color: black;
+    font-family: 'Unbounded', cursive;
+}
+
+.cabecalho {
+    margin-top: -10px;
+    margin-bottom: -15px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.selecao-de-personagens {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    min-height: calc(100vh - 112px);
+    justify-content: center;
+}
+
+.selecao-de-personagens .lista-de-personagens {
+    width: 630px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+    justify-content: center;
+}
+
+.selecao-de-personagens .personagens {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 985px;
+    gap: 25px;
+}
+
+.selecao-de-personagens .personagens .titulo {
+    color: white;
+    font-size: 20px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #ce0102;
+    width: 100%;
+    text-align: center;
+}
+
+.lista-de-personagens .personagem img {
+    width: 100%;
+    height: 100%;
+    transition: transform .2s;
+}
+
+.lista-de-personagens .personagem img:hover {
+    transform: scale(1.0);
+}
+
+
+.lista-de-personagens .personagem.selecionado {
+    box-shadow: 0px 0px 24px 5px #ce0102;
+    transition: transform .2s;
+}
+
+.lista-de-personagens .personagem.selecionado:hover {
+    box-shadow: 0px 0px 24px 5px #ce0102;
+    transform: scale(1.1);
+}
+
+.personagem-selecionado {
+    text-align: center;
+    max-height: 530px;
+}
+
+.personagem-selecionado .personagem-grande {
+    width: 330px;
+    width: 330px;
+}
+
+.personagem-selecionado .nome-personagem {
+    color: white;
+    border-bottom: 2px solid #ce0102;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.personagem-selecionado .descricao-personagem {
+    color: white;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    margin-top: 5px;
+    width: 490px;
+}
